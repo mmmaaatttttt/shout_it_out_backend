@@ -35,6 +35,5 @@ module.exports = {
   BadRequestError,
   UnauthorizedError,
   ForbiddenError,
-  NotFoundError,
-  UnprocessableEntityError,
+  NotFoundError
 }
