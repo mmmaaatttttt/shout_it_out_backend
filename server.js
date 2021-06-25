@@ -1,10 +1,12 @@
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 const categoryRoutes = require("./routes/categories");
 const { NotFoundError } = require("./utils/errors");
 
 const app = express();
 
+app.use(cors());
 app.use(morgan("tiny"));
 app.use(express.json());
 
